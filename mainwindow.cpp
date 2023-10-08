@@ -63,7 +63,7 @@ void MainWindow::Display(QString data)
 
     QByteArray ba_data = data.toUtf8();
 
-    ui->te_result->append("Принято сообщение от: " + QString::number(BIND_PORT_STR) + ". "
+    ui->te_result->append("Принято сообщение от порта: " + QString::number(BIND_PORT_STR) + ". "
                           "Размер сообщения(байт): " + QString::number(ba_data.capacity()));
 }
 
